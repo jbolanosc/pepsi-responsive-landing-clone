@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="nav d-flex">
+        <img class="navbar-brand" src="assets/logo.png" alt="" />
+        <div class="toggle-menu" onclick="toggleMenu()"></div>
+        <ul class="navbar-links navigation">
+          <li class="nav-link">Home</li>
+          <li class="nav-link">Products</li>
+          <li class="nav-link">What's new</li>
+          <li class="nav-link">Newsletter</li>
+          <li class="nav-link">Contact</li>
+        </ul>
+      </header>
+
+      <main>
+        <div class="landing d-grid columns">
+          <div class="landing-left">
+            <h2>That's what</h2>
+            <h2 class="h2-x2">I like</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              est impedit earum dolores sapiente, voluptatem porro quod optio,
+              quis eveniet esse ad culpa aspernatur ipsum non molestiae eaque
+              sunt ut quaerat corporis perferendis officia dolorem? Repudiandae
+              voluptatum hic eos atque.
+            </p>
+            <button>View All products</button>
+          </div>
+          <div class="landing-right">
+            <div class="img-box">
+              <img src="assets/pepsi001.png" alt="" class="pepsi" />
+            </div>
+
+            <div class="landing-right-links flex-column">
+              <a href="www.facebook.com"
+                ><img src="assets/facebook.png" alt=""
+              /></a>
+              <a href="www.instagram.com"
+                ><img src="assets/instagram.png" alt=""
+              /></a>
+              <a href="www.twitter.com"
+                ><img src="assets/twitter.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <ul class="thumb">
+          <li>
+            <img
+              width="30"
+              src="assets/pepsi001.png"
+              alt=""
+              onClick="imgSlider('assets/pepsi001.png'); changeBgColor('#0062be')"
+            />
+          </li>
+          <li>
+            <img
+              width="30"
+              src="assets/pepsi002.png"
+              alt=""
+              onClick="imgSlider('assets/pepsi002.png'); changeBgColor('#e60c2c')"
+            />
+          </li>
+          <li>
+            <img
+              width="30"
+              src="assets/pepsi003.png"
+              alt=""
+              onClick="imgSlider('assets/pepsi003.png'); changeBgColor('#1e1e1e')"
+            />
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <script src="site.js"></script>
+  </body>
+</html>

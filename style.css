@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0062be;
+  color: #fff;
+}
+
+.navbar-brand {
+  position: relative;
+  max-width: 80px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.landing-left {
+  align-self: center;
+  max-width: 100%;
+}
+
+.landing-left h2 {
+  font-size: 2.7rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.landing-left .h2-x2 {
+  font-size: 5rem;
+}
+
+.landing-left p {
+  font-size: 1rem;
+  margin: 1%;
+  text-align: justify;
+  font-weight: 900;
+}
+
+.landing-left h2 span {
+  font-size: 1.5em;
+}
+
+.landing-right {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  border-radius: 40px;
+  color: rgb(4, 47, 187);
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 8px 20px;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb li {
+  margin: 1%;
+  cursor: pointer;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+.landing-right-links a {
+  margin: 10px 0;
+  filter: invert(1);
+}
+
+.landing-right-links .img-box {
+  max-width: 260px;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 20px 100px;
+}
+
+@media (max-width: 994px) {
+  .wrapper {
+    padding: 40px;
+  }
+
+  .nav {
+    height: 100%;
+  }
+
+  .navbar-brand img {
+    position: relative;
+    max-width: 60px;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    transform: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .navbar-links.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .navbar-links li {
+    color: #000;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  .navbar-links li:hover {
+    color: #0062be;
+  }
+
+  .toggle-menu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url("assets/menu.png");
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-right {
+    flex-direction: column;
+  }
+
+  .flex-column {
+    flex-direction: row;
+  }
+
+  .landing-right-links a {
+    margin: 10px 10px;
+  }
+
+  .toggle-menu.active {
+    background: url("assets/close.png");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    filter: invert(1);
+  }
+
+  .landing-left {
+    margin: 30px 0;
+  }
+
+  .landing-right {
+    margin: 30px 0;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+}
